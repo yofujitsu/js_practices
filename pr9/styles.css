@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body {
+    background-color:teal;
+    text-decoration: none;
+}
+
+._container {
+    margin: 320px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+._button {
+    width: 10rem;
+    height: 5rem;
+    background-color:darkgrey;
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+._button2 {
+    width: 10rem;
+    height: 5rem;
+    background-color:darkgrey;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.fa-heart {
+    color: azure;
+    font-size: 2.5rem;
+}
+
+.fa-face-smile {
+    color: azure;
+    font-size: 3rem;
+}
+
+.count {
+    font-size: 3rem;
+    color: red;
+}
+
+.fa-ghost {
+    position: absolute;
+    color:darkgreen;
+    font-size: 5rem;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: xx-large;
+    color:aliceblue;
+}
+
+header {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: xx-large;
+    text-align: center;
+    color:aliceblue;
+}
