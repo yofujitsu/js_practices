@@ -43,14 +43,6 @@ body {
     color: red;
 }
 
-.fa-ghost {
-    position: absolute;
-    color:darkgreen;
-    font-size: 5rem;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-}
-
 .text {
     font-family: 'Shadows Into Light', cursive;
     font-size: xx-large;
@@ -62,4 +54,15 @@ header {
     font-size: xx-large;
     text-align: center;
     color:aliceblue;
+}
+
+.canvas {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.created-heart {
+    position: absolute;
 }

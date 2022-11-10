@@ -5,6 +5,8 @@ const smile = document.querySelector("._button2");
 const heart = document.querySelector(".fa-heart");
 const counter = document.querySelector(".count")
 const ghost = document.querySelector(".fa-ghost");
+let containerCreate = document.querySelector(".canvas");
+let main = document.main;
         
 
 //ЗАДАНИЕ 1
@@ -51,16 +53,52 @@ like.addEventListener('click', event => {
 
 
 //ЗАДАНИЕ 4
-smile.addEventListener('click', event => {
-    if(ghost.style.opacity == 0) {
-        ghost.style.opacity = 1;
-        ghost.style.top = event.clientY+"px";
-        ghost.style.left = event.clientX+"px";
-    } else {ghost.style.opacity = 0;}
-});
 
-ghost.addEventListener('mousemove',
-function(e) {
-    ghost.style.left = e.clientX+"px";
-    ghost.style.top = e.clientY+"px";
+smile.addEventListener("click", event => {
+    if(smile.classList.contains("active")){
+        while(containerCreate.lastElementChild){
+            containerCreate.removeChild(containerCreate.lastElementChild);
+        }
+        smile.classList.remove("active");
+    }
+    else smile.classList.add("active");
 });
+let x = 0;
+let y = 0;
+
+containerCreate.addEventListener('mousemove', (e) => {
+    
+    let newHeart = document.createElement("img");
+    newHeart.src = "heart.png";
+    newHeart.style.width = "3rem";
+    newHeart.style.height = "3rem";
+    let localY = e.pageY - containerCreate.getBoundingClientRect().top;
+    let localX = e.pageX - containerCreate.getBoundingClientRect().left;
+
+    if(smile.classList.contains("active") && Math.abs(x - localX) > 5 && Math.abs(y - localY) > 5){
+        newHeart.classList.add("smile");
+        newHeart.classList.add("created-heart");
+        // Если тащат, то высчитываем новое положение,
+        // вычитая начальное положение элемента из положения курсора.
+        newHeart.style.top = `${localY}px`;
+        newHeart.style.left = `${localX}px`;
+        containerCreate.append(newHeart);
+        x = localX;
+        y = localY;
+    }
+  });
+
+
+// smile.addEventListener('click', event => {
+//     if(ghost.style.opacity == 0) {
+//         ghost.style.opacity = 1;
+//         ghost.style.top = event.clientY+"px";
+//         ghost.style.left = event.clientX+"px";
+//     } else {ghost.style.opacity = 0;}
+// });
+
+// ghost.addEventListener('mousemove',
+// function(e) {
+//     ghost.style.left = e.clientX+"px";
+//     ghost.style.top = e.clientY+"px";
+// });
