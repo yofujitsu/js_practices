@@ -1,0 +1,195 @@
+/*Обнуление*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1;
+    font-size: 12px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+main {
+    margin-top: 26rem;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 500;
+}
+
+body{
+    background-image: url("https://get.wallhere.com/photo/Kobeni-Chainsaw-Man-manga-Chainsaw-Man-artwork-tie-1927703.jpg");
+}
+
+.title{
+    text-align: center;
+}
+.title_h2{
+    margin: 0 1rem 0;
+    font-size: 2.4rem;
+}
+
+.header{
+    padding: 1rem;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color:crimson;
+    border-radius: 2rem;
+    align-items: center;
+}
+.logo {
+    width: 5rem;
+}
+.notification {
+    min-width: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.img__notification {
+    cursor: pointer;
+    align-self: end;
+    width: 4rem;
+}
+.text__notification {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+.counter{
+    position: absolute;
+    background-color:brown;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.text__notification li{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: brown;
+}
+
+.container {
+    background-color:crimson;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+.card {
+    padding: 1rem;
+    margin: 0 1rem;
+    flex: 1 1 1 18%;
+}
+.card2{
+    flex: 1 1 1 5%;
+}
+.button{
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin: 0 4rem;
+    flex: 1 1 20%;
+    padding: 1rem;
+    background-color: crimson;
+}
+img{
+    width: 100%;
+}
+
+.header-text {
+    font-size: xx-large;
+    padding-left: 10rem;
+}
