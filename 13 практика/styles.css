@@ -1,0 +1,94 @@
+.slider {
+    border-radius: 5px;
+    background: #E0E0E0;
+    background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+    width: 350px;
+    height: 15px;
+    margin-left: 14%;
+  }
+  
+  .thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: crimson;
+    cursor: pointer;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Exo 2", sans-serif;
+    background-color:lightcoral;
+    overflow-x: hidden;
+    font-weight: 500;
+  }
+  
+  #largeImg {
+    border: solid 1px #ccc;
+    width: 600px;
+    height: 450px;
+    padding: 5px;
+  }
+  
+  #thumbs a {
+    border: solid 1px #ccc;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin: 2px;
+    float: left;
+  }
+  
+  #thumbs a:hover {
+    border-color: #FF9900;
+  }
+  
+  #thumbs li {
+    list-style: none;
+  }
+  
+  #thumbs {
+    margin: 0;
+    padding: 0;
+  }
+
+  .selected {
+    background:#FF9900;
+  }
+
+  li {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .slider-container {
+    margin: 1rem 5rem;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 18rem;
+    font-size: 2rem;
+  }
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
