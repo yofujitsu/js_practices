@@ -87,3 +87,34 @@ let thumb = slider.querySelector('.thumb');
         }
         li.classList.add('selected');
       }
+
+      function allowDragAndDrop(elem) {
+
+        elem.preventDefault();
+      
+      }
+      function drag(elem) {
+      
+        elem.dataTransfer.setData("text", elem.target.id);
+      
+      }
+      function drop(elem) {
+      
+        elem.preventDefault();
+      
+        var data = elem.dataTransfer.getData("text");
+
+        var box = document.querySelector("#myFigure");
+        var ronaldo = document.querySelector("#myImage");
+
+        var all_cost = Number(box.getAttribute('all_cost'));
+        console.log(all_cost);
+        var cost = Number(ronaldo.getAttribute('cost'));
+        console.log(cost);
+        all_cost += cost;
+
+        console.log(all_cost);
+      
+        elem.target.appendChild(document.getElementById(data));
+      
+      }
